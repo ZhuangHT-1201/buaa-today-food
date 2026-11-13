@@ -269,7 +269,7 @@ function App() {
       language === "en" ? "en" : "zh-CN";
     document.title =
       language === "en"
-        ? "Hangwei Notes · What should I eat at Beihang?"
+        ? "Bite BUAA · What should I eat at Beihang?"
         : "航味拾光 · 北航今天吃什么";
   }, [language]);
 
@@ -630,12 +630,12 @@ function Sidebar({
           <Plane size={19} fill="currentColor" />
         </span>
         <span className="brand-copy">
-          <strong>{tr("航味拾光", "Hangwei Notes")}</strong>
-          <small>BUAA FOOD NOTES</small>
+          <strong>{tr("航味拾光", "Bite BUAA")}</strong>
+          <small>{tr("北航食堂灵感簿", "CAMPUS FOOD GUIDE")}</small>
         </span>
       </button>
 
-      <div className="sidebar-label">EXPLORE</div>
+      <div className="sidebar-label">{tr("逛菜单", "EXPLORE")}</div>
       <nav className="side-nav" aria-label={tr("主导航", "Main navigation")}>
         <button
           type="button"
@@ -719,7 +719,7 @@ function Topbar({
         <span className="brand-mark">
           <Plane size={18} fill="currentColor" />
         </span>
-        <strong>{tr("航味拾光", "Hangwei Notes")}</strong>
+        <strong>{tr("航味拾光", "Bite BUAA")}</strong>
       </div>
 
       <form className="search-box" onSubmit={onSearchSubmit}>
@@ -884,7 +884,9 @@ function DiscoverView({
 
         {displayFeaturedDish && (
           <div className="hero-feature">
-            <span className="orbit-text">FRESH · DAILY · BUAA · FRESH · DAILY · BUAA ·</span>
+            <span className="orbit-text">
+              {tr("今日新鲜 · 好好吃饭 · 北航食堂", "FRESH · DAILY · BUAA FOOD")}
+            </span>
             <button
               type="button"
               className="hero-photo"
@@ -927,7 +929,7 @@ function DiscoverView({
         <div className="roll-launcher-copy">
           <span className="roll-number">01</span>
           <div>
-            <span className="section-kicker">ONE-CLICK CAMPUS ROLL</span>
+            <span className="section-kicker">{tr("选校区 · 抽一餐", "ONE-CLICK CAMPUS ROLL")}</span>
             <h2>{tr("选一个校区，直接开饭。", "Pick a campus. Roll a meal.")}</h2>
             <p>
               {tr(
@@ -958,7 +960,7 @@ function DiscoverView({
                 </em>
               </span>
               <b>
-                ROLL
+                {tr("抽一顿", "ROLL")}
                 <ArrowRight size={16} />
               </b>
             </button>
@@ -970,7 +972,7 @@ function DiscoverView({
       <section className="mood-filter">
         <div className="section-heading compact">
           <div>
-            <span className="section-kicker">PICK YOUR MOOD</span>
+            <span className="section-kicker">{tr("按胃口挑", "PICK YOUR MOOD")}</span>
             <h2>{tr("今天是什么胃口？", "What sounds good today?")}</h2>
           </div>
           <span className="filter-caption">
@@ -999,7 +1001,7 @@ function DiscoverView({
       <section className="canteen-section canteen-strip">
         <div className="section-heading">
           <div>
-            <span className="section-kicker">YOUR CANTEENS</span>
+            <span className="section-kicker">{tr("常去食堂", "YOUR CANTEENS")}</span>
             <h2>{tr("你的食堂半径", "Your dining radius")}</h2>
           </div>
           <button type="button" className="text-button" onClick={onOpenCampus}>
@@ -1050,7 +1052,7 @@ function DiscoverView({
       <section className="dish-section" ref={dishSectionRef}>
         <div className="section-heading dish-heading">
           <div>
-            <span className="section-kicker">CURATED TODAY</span>
+            <span className="section-kicker">{tr("今日菜单", "CURATED TODAY")}</span>
             <h2>
               {tr("今天值得吃", "Worth eating today")}
               <span className="result-count">{filteredDishes.length}</span>
@@ -1221,7 +1223,7 @@ function CanteensView({
       <section className="page-heading">
         <div className="eyebrow">
           <span className="eyebrow-line" />
-          CAMPUS FOOD MAP
+          {tr("校园吃饭地图", "CAMPUS FOOD MAP")}
         </div>
         <h1>{tr("先认识你的食堂。", "Get to know your dining halls.")}</h1>
         <p>
@@ -1372,7 +1374,7 @@ function FavoritesView({
       <section className="page-heading favorites-heading">
         <div className="eyebrow">
           <span className="eyebrow-line" />
-          YOUR SAVED BITES
+          {tr("我的想吃清单", "YOUR SAVED BITES")}
         </div>
         <h1>{tr("想吃的，都放在这里。", "Keep every craving in one place.")}</h1>
         <p>
@@ -1476,7 +1478,7 @@ function DishDetailModal({
           <img src={displayDish.image} alt={displayDish.name} />
           <span className="detail-visual-shade" />
           <div className="detail-topline">
-            <span className="detail-kicker">TODAY'S PICK · 01</span>
+            <span className="detail-kicker">{tr("今日推荐 · 01", "TODAY'S PICK · 01")}</span>
             <span className="detail-official">
               <Check size={12} strokeWidth={3} />
               {tr("北航官方上新", "Official Beihang")}
@@ -1647,7 +1649,7 @@ function CampusBindingModal({
           <X size={19} />
         </button>
         <div className="binding-heading">
-          <span className="section-kicker">MAKE IT YOURS</span>
+          <span className="section-kicker">{tr("设置我的饭点", "MAKE IT YOURS")}</span>
           <h2 id="binding-title">
             {tr("把你的校园，绑定进来。", "Make this campus yours.")}
           </h2>
@@ -1788,7 +1790,7 @@ function SourcesModal({ onClose }) {
             <BookOpen size={22} />
           </span>
           <div>
-            <span className="section-kicker">OPEN NOTES</span>
+            <span className="section-kicker">{tr("菜单出处", "OPEN NOTES")}</span>
             <h2 id="sources-title">
               {tr("菜单从哪里来？", "Where does the menu come from?")}
             </h2>
@@ -1900,7 +1902,9 @@ function DrawModal({
         </div>
 
         <span className="draw-kicker">
-          {isDrawing ? "CHOOSING FOR YOU" : "YOUR NEXT MEAL"}
+          {isDrawing
+            ? tr("正在翻菜单", "CHOOSING FOR YOU")
+            : tr("这顿吃什么", "YOUR NEXT MEAL")}
         </span>
         <h2 id="draw-title">
           {isDrawing

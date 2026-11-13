@@ -1,4 +1,4 @@
-# Hangwei Notes
+# Bite BUAA
 
 **A bilingual campus dining discovery app for Beihang University students.**
 
@@ -8,15 +8,15 @@
 ![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-1F4D3C)
 
-Hangwei Notes turns the daily question — *“What should I eat today?”* — into a fast, visual decision. Students can bind their campus and favorite dining halls, explore real dishes from Beihang University, or let **Roll** choose a complete meal including the campus, dining hall, floor, stall, dish, and estimated price.
+Bite BUAA turns the daily question — *“What should I eat today?”* — into a fast, visual decision. Students can bind their campus and favorite dining halls, explore real dishes from Beihang University, or let **Roll** choose a complete meal including the campus, dining hall, floor, stall, dish, and estimated price.
 
 <p align="center">
-  <img src="./docs/screenshots/home-en.png" alt="Hangwei Notes English desktop interface" width="100%" />
+  <img src="./docs/screenshots/home-en.png" alt="Bite BUAA English desktop interface" width="100%" />
 </p>
 
 ## Why this project
 
-University dining information is scattered across notices, public-account posts, menus, and word of mouth. Hangwei Notes brings it into one focused experience designed around the decision students actually make every day.
+University dining information is scattered across notices, public-account posts, menus, and word of mouth. Bite BUAA brings it into one focused experience designed around the decision students actually make every day.
 
 - **Campus-first discovery:** bind Shahe or Xueyuan Road and choose the halls you use.
 - **One-click campus Roll:** choose a campus and receive the hall, stall, dish, and estimated price at once.
@@ -40,7 +40,7 @@ The result always contains the campus, dining hall, floor/stall, dish, and estim
 ### Mobile experience
 
 <p align="center">
-  <img src="./docs/screenshots/mobile-en.png" alt="Hangwei Notes English mobile interface" width="360" />
+  <img src="./docs/screenshots/mobile-en.png" alt="Bite BUAA English mobile interface" width="360" />
 </p>
 
 ## Quick start
